@@ -26,3 +26,23 @@ While Tailwind is the primary way of rendering styles, we must keep design eleme
 - **Global Variables / Tailwind Config:** Extract commonly used thematic values (Main theme colors, font families, branding assets) to make them universally reusable. 
   - If using a compiled Tailwind setup, place these in `tailwind.config.js`.
   - If using a CDN or vanilla setup with `style.css`, put them in CSS variables (`:root { --primary-color: #xxx; }`) and reference them consistently.
+
+## 4. Strict Theme Guidelines
+**CRITICAL INSTRUCTION FOR AGENTS:** When creating or updating any page, you MUST strictly follow the theme described below.
+
+### Colors
+- **primary**: `#F07D3E` (Orange accent, mapped to `--primary-orange`)
+- **darkBlue**: `#0B1B36` (Sections and footer dark bg, mapped to `--dark-blue`)
+- **lightBeige**: `#FDFCF8`
+- **textDark**: `#1A202C`
+- **textMuted**: `#64748B`
+- **Backgrounds**: Body default background is `#FAFAFA`.
+
+### Typography
+- **sans**: `'Inter', sans-serif` (Used for body text)
+- **serif**: `'Playfair Display', serif` (Used for headings `h1` through `h6`)
+
+### Styles
+- Include the Tailwind configuration script within the `<head>` of any new HTML file to define these custom colors and fonts in Tailwind classes (e.g., `text-primary`, `bg-darkBlue`, `font-serif`).
+- Define the custom CSS variables in a `<style>` block (e.g., `:root { --primary-orange: #F07D3E; --dark-blue: #0B1B36; }`).
+- Use reusable custom classes like `.pill-tag` where applicable.
