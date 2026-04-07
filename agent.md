@@ -46,3 +46,6 @@ While Tailwind is the primary way of rendering styles, we must keep design eleme
 - Include the Tailwind configuration script within the `<head>` of any new HTML file to define these custom colors and fonts in Tailwind classes (e.g., `text-primary`, `bg-darkBlue`, `font-serif`).
 - Define the custom CSS variables in a `<style>` block (e.g., `:root { --primary-orange: #F07D3E; --dark-blue: #0B1B36; }`).
 - Use reusable custom classes like `.pill-tag` where applicable.
+
+## 5. Strict Content Guidelines
+**CRITICAL INSTRUCTION FOR AGENTS:** When a user provides text content for a page (such as headings, paragraphs, or any other copy), you MUST insert it exactly as provided. DO NOT alter the wording, meaning, or structure of the inserted text. The provided content must remain exactly the same as shared by the user.

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About Brahmanshi (Dr. Sonal Shrivastava) - A transmitting Guru within the Himalayan Siddhashram Guru Parampara.">
+    <meta name="keywords"
+        content="Brahmanshi, Dr. Sonal Shrivastava, Spiritual Sadhna, Himalayan Parampara, Siddhashram, Guru-Shisya">
+    <title>About Brahmanshi - Spiritual Sadhna</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F07D3E',
+                        darkBlue: '#0B1B36',
+                        lightBeige: '#FDFCF8',
+                        textDark: '#1A202C',
+                        textMuted: '#64748B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(to bottom, #FDFCF8 0%, #FAFAFA 100%)',
+                        'dark-gradient': 'linear-gradient(to bottom, #0B1B36 0%, #1A202C 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --primary-orange: #F07D3E;
+            --dark-blue: #0B1B36;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1A202C;
+            background-color: #FAFAFA;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .pill-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            border: 1px solid #E2E8F0;
+            background-color: #FFFFFF;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #F07D3E;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .drop-cap::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            float: left;
+            margin-right: 0.75rem;
+            line-height: 1;
+            color: #F07D3E;
+        }
+
+        /* Mobile Menu Transitions */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+        }
+
+        #mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <header id="main-header" class="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 text-primary font-serif italic text-2xl font-bold">
+                    <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo"
+                        class="h-10 w-10 object-contain"
+                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'%23F07D3E\'><path d=\'M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z\'/></svg>'">
+                    <span class="sr-only">Spiritual Sadhna</span>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-textDark font-medium hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-primary font-medium">About</a>
+                    <a href="#" class="text-textDark font-medium hover:text-primary transition-colors">Gura Shishya</a>
+                    <a href="#" class="text-textDark font-medium hover:text-primary transition-colors">Ashram</a>
+                    <a href="#" class="text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-textDark hover:text-primary p-2 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-[55] hidden backdrop-blur-sm transition-opacity opacity-0"></div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white z-[60] shadow-2xl flex flex-col md:hidden">
+        <div class="flex justify-between items-center h-20 px-6 border-b border-gray-100">
+            <div class="flex items-center gap-2 text-primary font-serif italic text-xl font-bold">
+                <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo" class="h-8 w-8 object-contain">
+                <span>Spiritual Sadhna</span>
+            </div>
+            <button id="close-btn" class="text-textDark hover:text-primary p-2">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex-1 overflow-y-auto py-12 px-6">
+            <nav class="flex flex-col space-y-6">
+                <a href="index.html" class="text-xl font-medium text-textDark border-b border-gray-50 pb-4">Home</a>
+                <a href="about.html" class="text-xl font-medium text-primary border-b border-gray-50 pb-4">About</a>
+                <a href="#" class="text-xl font-medium text-textDark border-b border-gray-50 pb-4">Gura Shishya</a>
+                <a href="#" class="text-xl font-medium text-textDark border-b border-gray-50 pb-4">Ashram</a>
+                <a href="#" class="text-xl font-medium text-textDark border-b border-gray-50 pb-4">FAQ</a>
+                <a href="#" class="inline-flex items-center justify-center w-full px-8 py-4 bg-primary text-white rounded-full text-lg font-medium shadow-lg shadow-orange-500/20 active:scale-95 transition-transform">
+                    Contact Us
+                </a>
+            </nav>
+        </div>
+    </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="section-padding bg-hero-gradient text-center">
+            <div class="content-container">
+                <div class="pill-tag mx-auto">
+                    Lineage Continuity
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                    About Brahmanshi <br />
+                    <span class="text-primary italic">(Dr. Sonal Shrivastava)</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 font-medium italic mt-8 max-w-2xl mx-auto leading-relaxed">
+                    Brahmanshi is a transmitting Guru within the Himalayan Siddhashram Guru Parampara, carrying forward
+                    the living current of Paramhans Swami Nikhileshwaranand Ji under Guru-ādeśa.
+                </p>
+                <div class="w-24 h-1 bg-primary/20 mx-auto mt-12 rounded-full"></div>
+            </div>
+        </section>
+
+        <!-- Intro Content -->
+        <section class="pb-16 bg-white">
+            <div class="content-container text-center">
+                <p class="text-gray-600 mb-8 leading-loose text-lg">
+                    Her life is anchored in Adhyatm (Himalayan Spirituality), Guru seva, sādhana, and continuity of
+                    lineage — lived not in isolation from the world, but within it.
+                </p>
+                <p class="text-gray-600 leading-loose text-lg">
+                    She received Sanyaas Diksha and received her sanyas name Brahmanshi by her Guruji Paramhans Swami
+                    Nikhileshwaranandji. This is not a path adopted later in life. It is a continuity from birth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Birth in Ujjain Section -->
+        <section class="section-padding bg-lightBeige relative overflow-hidden">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="pill-tag">
+                        Sacred Foundations
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 leading-snug">
+                        Birth in the City of Mahākāleśhwar
+                    </h2>
+                    <div class="space-y-6 text-gray-600 leading-loose">
+                        <p>
+                            Brahmanshi was born and brought up in Ujjain — the sacred city of Mahākāleśhwar Bhagwān, one
+                            of the twelve Jyotirlingas. Mahākāl was the center of her upbringing.
+                        </p>
+                        <p>
+                            In her family, every achievement, examination, joy, and milestone was first placed at the
+                            feet of Shri Mahākāleśhwar before any worldly celebration followed. Gratitude preceded
+                            expression. Offering preceded celebration.
+                        </p>
+                        <p>
+                            From childhood, she entered the garbhagṛha of Mahākāleśhwar. During earlier years when
+                            temple access allowed close proximity, she performed abhiṣeka with her own hands numerous
+                            times.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-orange-100/50 rounded-3xl -z-10 rotate-3"></div>
+                    <img src="images/shree-mahakaleshwar.jpg" alt="Mahakaleshwar Temple"
+                        class="rounded-2xl shadow-2xl object-cover w-full h-[500px]">
+                </div>
+            </div>
+            <div class="content-container mt-12 text-gray-600 leading-loose">
+                <p>
+                    She sat within the sanctum for extended periods in japa and dhyāna — undisturbed, absorbed in
+                    silence before the Jyotirlinga. The vibration of the garbhagṛha — the stillness, density, and
+                    immediacy of presence — became formative impressions in her inner life. This foundation of
+                    Mahakaleshwar temple immersion shaped her orientation to Adhyatm and sādhana from the beginning.
+                </p>
+            </div>
+        </section>
+
+        <!-- From Mahakal to Devbhumi Section -->
+        <section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+            <img src="images/himalayas.jpg" alt="Himalayan Mountains"
+                class="absolute inset-0 w-full h-full object-cover"
+                onerror="this.src='https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2000&auto=format&fit=crop'">
+            <div class="absolute inset-0 bg-darkBlue/40 backdrop-blur-[2px]"></div>
+            <div class="relative z-10 text-center text-white px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">From Mahākāl to Devbhūmi</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed">
+                    Life unfolded from Ujjain toward the Himalayas — Devbhūmi, the land sanctified by tapas and Rishi
+                    tradition.
+                </p>
+            </div>
+        </section>
+
+        <!-- Journey Sections Grid -->
+        <section class="section-padding bg-white">
+            <div class="content-container space-y-12">
+                <div class="text-gray-600 leading-loose text-lg drop-cap">
+                    The movement to Uttarakhand was not departure from Mahākāl. It was expansion of the same current.
+                    Her connection with the Himalayas began early and deepened steadily. Kedarnath, Badrinath, Gangotri,
+                    Rishikesh, and Haridwar became recurring fields of contemplation and practice.
+                </div>
+                <p class="text-gray-600 leading-loose text-lg">
+                    She regularly undertakes sādhana in these regions — sitting beside the Ganga, engaging in mantra
+                    japa, silent meditation, and disciplined observance. The Himalayas represent silence, austerity, and
+                    vertical ascent of awareness. Mahākāl anchored her foundation. The Himalayas deepened her inward
+                    journey.
+                </p>
+
+                <div class="border-l-4 border-primary pl-8 py-4 bg-orange-50/30 rounded-r-xl">
+                    <h3 class="text-2xl font-bold text-darkBlue mb-4">Kashi and the Flow of Consciousness</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Varanasi, the city of Vishwanāth, holds deep spiritual resonance in her life. The current of
+                        Shiva as cosmic witness is encountered there as living presence. Time and transcendence meet in
+                        Kashi, and her contemplative engagement with Vishwanāth and the Ganga has been part of her
+                        sustained practice.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-darkBlue">Kamakhyā and Nīlācala Sādhana</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        At Kamakhyā in Nīlācala, her engagement extended beyond darśan. Kamakhyā is a Tantric śakti
+                        kṣetra of intensity and depth. Her time there included disciplined sādhana within the boundaries
+                        and containment of tradition. These were periods of focused inner work, not casual visitation.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed italic">
+                        The śakti fields of Bharat — Vindhyāchal, Rāmeśhwaram, Padmanābhaswāmi Temple, Kanyakumari,
+                        Vrindāvan, Omkareshwar, Dakshineshwar Kāli Mandir, Ramakrishna Math, Nathdwara — have been
+                        entered by her as spaces of contemplative engagement and structured practice. Her movement
+                        across India has been as a part of her sādhana and upasana.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sri Vidya & Guru Adeśa Section -->
+        <section class="section-padding bg-darkBlue text-white overflow-hidden relative">
+            <div
+                class="absolute right-0 top-0 w-1/3 h-full bg-[url('images/mandala-watermark.png')] opacity-10 bg-no-repeat bg-right-top">
+            </div>
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+                <div class="bg-white/5 p-12 rounded-3xl border border-white/10 backdrop-blur-sm">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Śrī Vidyā and Structured Discipline</h3>
+                    <p class="mb-4 leading-loose">
+                        Her sādhana orientation includes structured Śrī Vidyā Krāmik Dīkṣā progression — grounded in
+                        mantra, yantra, and disciplined ritual practice.
+                    </p>
+                    <p class="mb-4 leading-loose">
+                        Transmission is approached with containment, secrecy where required, and respect for lineage
+                        protocols.
+                    </p>
+                    <p class="text-primary font-medium italic">
+                        The aim is not accumulation of methods. It is refinement of the instrument.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-8">Continuity Through Guru-Ādeśa</h3>
+                    <p class="mb-6 leading-loose opacity-90">
+                        The work she undertakes is rooted in Guru-kripā and Guru-ādeśa. She received Guru Adesh from her
+                        revered Guru Paramhans Swami Nikhileshwaranandji to carry forward his Gyan and Karya.
+                    </p>
+                    <p class="mb-6 leading-loose opacity-90">
+                        She stands within the Siddhashram Guru Parampara as transmitter — not as founder of a new
+                        identity or work, but as continuation of living lineage.
+                    </p>
+                    <p class="leading-loose opacity-90">
+                        The Guru-Mandal operates through the chosen Shishyas who are given Adesh to become Guru and
+                        transmit sadhana gyan. Transmission is sustained by the entire Parampara field.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grahastha life integration Section -->
+        <section class="section-padding bg-lightBeige">
+            <div class="content-container text-center mb-16">
+                <div class="pill-tag mx-auto">Integration of Paths</div>
+                <h2 class="text-4xl font-bold mb-6">Gṛhastha and Sādhaka</h2>
+                <p class="text-xl text-gray-700 italic">"Living life 200%, 100% as a Grahasth, a wife, a doctor and 100%
+                    as a Sanyast, a Sadhika, a Shishya, a Guru."</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-gray-100">
+                    <div
+                        class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 text-xl">
+                        🩺</div>
+                    <h4 class="text-xl font-bold mb-4">Professional Dharma</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        As Dr. Sonal Shrivastava, Senior Consultant and Super Specialist in Endocrinology, she fulfills
+                        her professional dharma consistently and responsibly. Patients are seen regularly. Medical
+                        service is carried out with discipline and compassion.
+                    </p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-gray-100">
+                    <div
+                        class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 text-xl">
+                        🧘</div>
+                    <h4 class="text-xl font-bold mb-4">Integrated Tapas</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Worldly responsibility is not abandoned for spiritual life. Both paths and their Dharma are
+                        integrated. Professional duty and spiritual tapas coexist without contradiction. Her life
+                        reflects balance — strength in action, depth in silence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sadhana within Grahastha Life Section -->
+        <section class="section-padding bg-white">
+            <div class="content-container">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-16 tracking-tight">SĀDHANA WITHIN GṚHASTHA LIFE
+                </h2>
+
+                <div class="space-y-16">
+                    <div>
+                        <h4
+                            class="text-2xl font-bold mb-4 text-darkBlue border-b-2 border-primary/20 pb-2 inline-block">
+                            The Path of Integration, Not Withdrawal</h4>
+                        <p class="text-gray-600 leading-loose text-lg">
+                            The Himalayan Siddhashram Guru Parampara does not demand escape from life. It demands depth
+                            of Adhyatm within it. This lineage affirms that spiritual realisation and worldly
+                            responsibility are not opposed. They can be integrated through Guru’s Gyan and Guru Kripa.
+                        </p>
+                    </div>
+
+                    <div class="bg-darkBlue text-white p-12 rounded-3xl shadow-xl">
+                        <h4 class="text-2xl font-bold mb-6 text-primary">The Living Example of the Lineage</h4>
+                        <p class="mb-6 leading-loose">
+                            Paramhans Swami Nikhileshwaranand Ji, in his gṛhastha identity as Dr. Narayan Dutt Shrimali,
+                            demonstrated that intense Sādhana can coexist with worldly responsibility.
+                        </p>
+                        <p class="mb-4 opacity-80 leading-loose">
+                            He taught not to abandon engagement with society to pursue spiritual attainment. He showed
+                            that tapas, mantra, and sadhana can unfold within the responsibilities of family and
+                            profession.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+                            <div class="border-l-2 border-primary/50 pl-6">
+                                <p class="font-serif italic text-xl">Dharma in action.</p>
+                            </div>
+                            <div class="border-l-2 border-primary/50 pl-6">
+                                <p class="font-serif italic text-xl">Sādhana in silence.</p>
+                            </div>
+                            <div class="border-l-2 border-primary/50 pl-6">
+                                <p class="font-serif italic text-xl">Strength in responsibility.</p>
+                            </div>
+                        </div>
+                        <p class="mt-8 text-primary font-bold">The Parampara carries this example forward.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 md:order-1">
+                            <h4 class="text-2xl font-bold mb-6 text-darkBlue">Brahmanshi — Continuing the Same Path</h4>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Following her Guru’s footsteps, Brahmanshi lives as both:
+                            </p>
+                            <ul class="space-y-4 mb-6">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-primary mt-1">●</span>
+                                    <span class="text-gray-800 font-medium">A practicing medical doctor and Super
+                                        Specialist</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-primary mt-1">●</span>
+                                    <span class="text-gray-800 font-medium">A dedicated Shishya and Sādhak</span>
+                                </li>
+                            </ul>
+                            <p class="text-gray-600 leading-relaxed italic border-l-4 border-orange-200 pl-6">
+                                Her professional life is well segregated from her spiritual life. She fulfills her duty
+                                to patients with sincerity, while maintaining structured daily Sādhana under Guru-ādeśa.
+                                There is no contradiction between her clinic and her sadhana kaksha.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="images/image2.png" alt="Brahmanshi (Dr. Sonal Shrivastava)"
+                                class="rounded-2xl shadow-xl w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guidelines Grid Section -->
+        <section class="section-padding bg-lightBeige">
+            <div class="max-w-6xl mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-12 text-darkBlue">Spiritual Depth Without Escapism</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 font-bold">
+                            1</div>
+                        <p class="text-gray-800 font-medium leading-relaxed">Perform your responsibilities with
+                            integrity.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 font-bold">
+                            2</div>
+                        <p class="text-gray-800 font-medium leading-relaxed">Maintain disciplined daily Sādhana.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 font-bold">
+                            3</div>
+                        <p class="text-gray-800 font-medium leading-relaxed">Align conduct with Dharma. Refine awareness
+                            amidst activity.</p>
+                    </div>
+                </div>
+                <p class="mt-12 text-center text-gray-600 text-lg italic max-w-3xl mx-auto">
+                    Withdrawal from life is not superior to mastery within it. The battlefield of daily life becomes the
+                    ground of refinement.
+                </p>
+            </div>
+        </section>
+
+        <!-- Call for seekers Section -->
+        <section class="section-padding bg-white">
+            <div class="content-container">
+                <h4 class="text-2xl md:text-3xl font-bold mb-10 text-center text-darkBlue">For Householders,
+                    Professionals, and Seekers in the World</h4>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <span class="px-6 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium">A
+                        doctor</span>
+                    <span class="px-6 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium">A
+                        businessperson</span>
+                    <span class="px-6 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium">A
+                        homemaker</span>
+                    <span class="px-6 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium">A
+                        professional</span>
+                    <span class="px-6 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium">A
+                        student</span>
+                    <span class="px-6 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium">A
+                        parent</span>
+                </div>
+                <div class="text-center space-y-6 text-gray-600 leading-loose text-lg">
+                    <p>
+                        You are not excluded from Adhyatm and Sādhana. You are invited to elevate yourself while living
+                        in this same world.
+                    </p>
+                    <p>
+                        The Parampara recognises that modern life carries responsibility. Discipline within
+                        responsibility develops steadiness far more than isolation without maturity.
+                    </p>
+                    <p>
+                        The householder who practices sincerely becomes inwardly anchored while outwardly engaged.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message from Parampara -->
+        <section class="section-padding bg-darkBlue text-white text-center group">
+            <div class="content-container relative">
+                <h2 class="text-3xl md:text-5xl font-bold mb-16 tracking-tight">The Message of the Parampara</h2>
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-24">
+                        <div>
+                            <p class="text-2xl font-serif italic mb-2">Do not abandon life.</p>
+                            <p class="text-primary text-3xl font-bold uppercase tracking-widest">Sanctify it.</p>
+                        </div>
+                        <div class="hidden md:block w-px h-24 bg-white/20"></div>
+                        <div>
+                            <p class="text-2xl font-serif italic mb-2">Do not reject responsibility.</p>
+                            <p class="text-primary text-3xl font-bold uppercase tracking-widest break-words">Stabilise within it.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-serif italic mb-2">Do not postpone Sādhana.</p>
+                        <p class="text-primary text-3xl font-bold uppercase tracking-widest break-words">Begin now
+                            — where you stand.</p>
+                    </div>
+                </div>
+                <p class="mt-12 text-gray-400 font-medium italic">
+                    The same path walked by Guruji. Through discipline. Through steadiness. Through integration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Final Invitation Section -->
+        <section class="section-padding bg-white relative">
+            <div class="content-container text-center">
+                <div class="pill-tag mx-auto">The Invitation</div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 leading-snug text-darkBlue">
+                    Brahmanshi, walking in the footsteps of her Guru, guides seekers toward this integrated path.
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 text-left text-lg max-w-3xl mx-auto mb-16">
+                    <div class="border-l-4 border-primary pl-6">
+                        <p class="font-medium text-darkBlue">A path where Sādhana strengthens life. Life becomes the
+                            field of Sādhana.</p>
+                    </div>
+                    <div class="border-l-4 border-primary pl-6">
+                        <p class="font-medium text-darkBlue">Where sadhana is not escape, it is expansion with
+                            elevation.</p>
+                    </div>
+                </div>
+
+                <div class="mt-20 border-t border-gray-100 pt-12">
+                    <div class="font-serif italic text-3xl text-primary font-bold mb-2">Brahmanshi (Dr. Sonal
+                        Shrivastava)</div>
+                    <div class="text-darkBlue tracking-widest uppercase font-medium text-sm mb-8">Himalayan Siddhashram
+                        Guru Parampara</div>
+                    <div class="flex justify-center gap-6 text-gray-500 font-medium">
+                        <span>Dharma</span>
+                        <span>•</span>
+                        <span>Sādhana</span>
+                        <span>•</span>
+                        <span>Transmission</span>
+                    </div>
+                </div>
+
+                <div class="mt-16 flex justify-center">
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-10 py-4 border border-transparent rounded-full text-base font-medium text-white bg-primary hover:bg-orange-600 shadow-xl shadow-orange-500/30 transition-all">
+                        Apply For Guidance
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBlue text-gray-400 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div
+                class="flex flex-shrink-0 items-center justify-center gap-2 mb-8 text-white font-serif italic text-2xl font-bold">
+                <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo" class="h-10 w-10 object-contain"
+                    onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'%23F07D3E\'><path d=\'M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z\'/></svg>'">
+                <span>Spiritual Sadhna</span>
+            </div>
+            <p class="max-w-md mx-auto mb-10 leading-relaxed">
+                Preserving the ancient Himalayan wisdom through Guru-Shisya Parampara.
+            </p>
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="pt-8 border-t border-white/5">
+                <p>&copy; 2026 Spiritual Sadhna. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
