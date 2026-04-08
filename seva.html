@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sevā within the Himalayan Siddhashram Guru Parampara. Service as refinement, participation in Dharma, and expression of gratitude.">
+    <meta name="keywords" content="Seva, Service, Spiritual, Sadhana, Himalayan, Guru-Shisya, Parampara, Dharma, Dakshina">
+    <title>Sevā - Spiritual Sadhna</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config for Theme Alignment -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F07D3E', // Orange accent
+                        darkBlue: '#0B1B36', // Sections and footer dark bg
+                        lightBeige: '#FDFCF8',
+                        textDark: '#1A202C',
+                        textMuted: '#64748B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(to right, #E2E8F0 0%, #FFFFFF 50%, #FFEDD5 100%)',
+                        'mandala-watermark': 'url("images/mandala-watermark.png")'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS Variables & Shared Rules -->
+    <style>
+        :root {
+            --primary-orange: #F07D3E;
+            --dark-blue: #0B1B36;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-blue);
+            background-color: #FAFAFA;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .pill-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            border: 1px solid #D1D5DB;
+            background-color: #FFFFFF;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="main-header"
+        class="w-full fixed top-0 z-50 transition-all duration-300 border-b bg-transparent border-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 text-primary font-serif italic text-2xl font-bold">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo"
+                             class="h-10 w-10 object-contain"
+                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'%23F07D3E\'><path d=\'M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z\'/></svg>'">
+                        <span class="text-darkBlue font-serif">Spiritual <span class="text-primary italic">Sadhna</span></span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-textDark font-medium hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-textDark font-medium hover:text-primary transition-colors">About</a>
+                    <a href="diksha.html" class="text-textDark font-medium hover:text-primary transition-colors">Diksha</a>
+                    <a href="seva.html" class="text-primary font-medium hover:text-orange-600 transition-colors">Sevā</a>
+                    <a href="sadhna.html" class="text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
+                    <a href="scaredGro.html" class="text-textDark font-medium hover:text-primary transition-colors">Geography</a>
+                    <a href="vision.html" class="text-textDark font-medium hover:text-primary transition-colors">Vision</a>
+                    <a href="faq.html" class="text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors">
+                        Connect With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-hero-gradient overflow-hidden py-32 sm:py-48 text-center flex flex-col items-center justify-center min-h-[60vh]">
+            <img src="images/icons/mandala1.png" alt=""
+                class="absolute bottom-0 translate-y-[40%] left-1/2 -translate-x-1/2 w-[900px] max-w-none opacity-5 object-contain pointer-events-none z-0 mix-blend-multiply" />
+            
+            <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="pill-tag text-primary border-primary/20 bg-orange-50">Sacred Service</div>
+                <h1 class="text-6xl md:text-8xl font-bold font-serif mb-6 leading-tight tracking-tight text-darkBlue">
+                    SEVĀ
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-serif italic mb-8 max-w-2xl mx-auto">
+                    "Sevā is refinement. Sevā becomes the natural expression of gratitude and alignment with the lineage."
+                </p>
+            </div>
+        </section>
+
+        <!-- The Spirit of Sevā -->
+        <section class="section-padding bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div class="mb-12 lg:mb-0">
+                        <div class="pill-tag">The Philosophy</div>
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold text-darkBlue mb-6 leading-snug">
+                            The Spirit of <span class="text-primary">Sevā</span>
+                        </h2>
+                        <div class="space-y-6 text-gray-600 font-medium leading-relaxed italic border-l-4 border-primary/20 pl-6 py-2">
+                            <p>Sevā is not charity. It is participation in Dharma.</p>
+                            <p>When a disciple serves, ego gradually softens. Ownership dissolves. Alignment strengthens.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-6 font-medium leading-relaxed">
+                            Sevā purifies intention and stabilises the relationship with Guru Tattva. It is not measured by scale. It is measured by sincerity.
+                        </p>
+                        <p class="text-gray-600 font-medium leading-relaxed">
+                            In the Himalayan Siddhashram tradition, service is seen as a powerful tool for inner transformation, allowing the practitioner to move beyond self-interest and into a state of universal flow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forms of Sevā -->
+        <section class="section-padding bg-lightBeige relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="pill-tag">Avenues of Participation</div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-darkBlue mb-6">Forms of Sevā</h2>
+                    <p class="text-lg text-gray-600 font-medium max-w-3xl mx-auto">
+                        Sevā may take many forms, according to capacity and circumstance.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 1. Practice-Based Sevā -->
+                    <div class="p-10 rounded-[32px] bg-white border border-slate-100 hover-lift flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-orange-50 text-primary flex items-center justify-center text-3xl mb-8">🧘</div>
+                        <h3 class="text-xl font-serif font-bold text-darkBlue mb-4">Practice-Based Sevā</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed">
+                            Maintaining disciplined daily Sādhana with integrity is the highest service to the Parampara. A steady practitioner strengthens the lineage current.
+                        </p>
+                    </div>
+
+                    <!-- 2. Time and Skill-Based Sevā -->
+                    <div class="p-10 rounded-[32px] bg-white border border-slate-100 hover-lift flex flex-col items-center text-center lg:scale-105 lg:z-10 shadow-xl shadow-slate-200/50">
+                        <div class="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center text-3xl mb-8 shadow-lg shadow-orange-500/20">⚙️</div>
+                        <h3 class="text-xl font-serif font-bold text-darkBlue mb-4">Time and Skill-Based</h3>
+                        <ul class="text-xs text-slate-500 font-medium space-y-2 text-left w-full mx-auto">
+                            <li class="flex items-center gap-2"><span>•</span> Administrative assistance</li>
+                            <li class="flex items-center gap-2"><span>•</span> Technical or website support</li>
+                            <li class="flex items-center gap-2"><span>•</span> Event organisation</li>
+                            <li class="flex items-center gap-2"><span>•</span> Translation or documentation</li>
+                            <li class="flex items-center gap-2"><span>•</span> Communication support</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Ashram and Physical Support -->
+                    <div class="p-10 rounded-[32px] bg-white border border-slate-100 hover-lift flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-orange-50 text-primary flex items-center justify-center text-3xl mb-8">🏠</div>
+                        <h3 class="text-xl font-serif font-bold text-darkBlue mb-4">Ashram Support</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed">
+                            Practical assistance in maintenance, organisation, and collective practice when the physical ashram space is operational.
+                        </p>
+                    </div>
+
+                    <!-- 4. Guru-Dakṣiṇā -->
+                    <div class="p-10 rounded-[32px] bg-white border border-slate-100 hover-lift flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-orange-50 text-primary flex items-center justify-center text-3xl mb-8">🧡</div>
+                        <h3 class="text-xl font-serif font-bold text-darkBlue mb-4">Guru-Dakṣiṇā</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-4">
+                            Voluntary offering as an expression of Shraddhā, not transaction. Dakṣiṇā is purely voluntary and non-mandatory.
+                        </p>
+                        <p class="text-[10px] text-slate-400 font-medium italic">"Dakṣiṇā is expression of Shraddhā, not transaction."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsibility & Inner Sevā -->
+        <section class="section-padding bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Responsibility -->
+                    <div class="bg-darkBlue text-white p-12 rounded-[40px] shadow-2xl relative overflow-hidden">
+                        <div class="absolute -top-10 -right-10 text-8xl opacity-10 font-serif">!</div>
+                        <h2 class="text-3xl font-serif font-bold mb-8 text-primary">Responsibility Within Sevā</h2>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs text-primary font-bold">01</div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Humility & Discipline</h4>
+                                    <p class="text-sm text-slate-400">Serving without expectation of status or authority.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs text-primary font-bold">02</div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Confidentiality</h4>
+                                    <p class="text-sm text-slate-400">Respecting the sanctity and boundaries of the Parampara.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs text-primary font-bold">03</div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Alignment with Guru-āgya</h4>
+                                    <p class="text-sm text-slate-400">Proceeding under direct guidance and instruction.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="mt-8 text-xs text-slate-400 italic">"It is not a platform for recognition or authority. Service strengthens refinement, not status."</p>
+                    </div>
+
+                    <!-- Inner Sevā -->
+                    <div class="flex flex-col justify-center">
+                        <div class="pill-tag">The Highest Service</div>
+                        <h2 class="text-4xl font-serif font-bold text-darkBlue mb-6 leading-snug">The Inner Sevā</h2>
+                        <p class="text-gray-600 mb-8 font-medium leading-relaxed">
+                            Beyond visible activity lies the highest form of service: maintaining purity of intention, preserving maryādā, and protecting the Parampara through conduct.
+                        </p>
+                        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                            <p class="text-darkBlue font-serif italic text-lg text-center">
+                                "When the disciple lives Dharma sincerely, Sevā is fulfilled."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBlue pt-20 pb-10 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="mb-6">
+                         <img src="images/logo1-transaparant.png" alt="Logo" class="h-12 w-12 opacity-80 mb-4" />
+                         <span class="text-2xl font-serif font-bold">Spiritual <span class="text-primary italic">Sadhna</span></span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-6 font-medium">
+                        Sevā through sincerity. Support through Shraddhā. Transmission through purity.
+                    </p>
+                </div>
+                <div>
+                     <h4 class="text-lg font-serif font-bold mb-6 text-primary">Quick Links</h4>
+                     <ul class="space-y-4 text-slate-400 font-medium">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="diksha.html" class="hover:text-white transition-colors">Diksha</a></li>
+                        <li><a href="seva.html" class="hover:text-white transition-colors text-white">Sevā</a></li>
+                     </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-serif font-bold mb-6 text-primary">Lineage</h4>
+                    <p class="text-slate-400 font-medium leading-relaxed">
+                        Himalayan Siddhashram <br />
+                        Guru Parampara <br />
+                        <span class="block mt-4 text-xs tracking-widest uppercase">Dharma. Sādhana. Transmission.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm">© 2026 Himalayan Siddhashram Guru Parampara. All rights reserved.</p>
+                <div class="flex gap-8 text-sm text-slate-500">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.getElementById('main-header');
+            function handleScroll() {
+                if (window.scrollY > 20) {
+                    header.classList.remove('bg-transparent', 'border-transparent');
+                    header.classList.add('bg-white/80', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                } else {
+                    header.classList.add('bg-transparent', 'border-transparent');
+                    header.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                }
+            }
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+        });
+    </script>
+</body>
+
+</html>
