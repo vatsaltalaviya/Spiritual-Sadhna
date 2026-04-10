@@ -132,36 +132,74 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-2 text-primary font-serif italic text-2xl font-bold">
-                    <a href="index.html" class="flex items-center gap-2">
-                        <img src="images/logo1-transaparant.png" alt="Logo" class="h-10 w-10 object-contain"
+                    <a href="index.html" class="flex items-center gap-2" aria-label="Spiritual Sadhna home">
+                        <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo"
+                            class="h-10 w-10 object-contain"
                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'%23F07D3E\'><path d=\'M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z\'/></svg>'">
-                        <span class="text-darkBlue font-serif">Spiritual <span
-                                class="text-primary italic">Sadhna</span></span>
+                        <span class="sr-only">Spiritual Sadhna</span>
                     </a>
                 </div>
 
-                <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-textDark font-medium hover:text-primary transition-colors">Home</a>
-                    <a href="about.html"
-                        class="text-textDark font-medium hover:text-primary transition-colors">About</a>
-                    <a href="diksha.html"
-                        class="text-textDark font-medium hover:text-primary transition-colors">Diksha</a>
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="text-primary font-medium hover:text-orange-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-textDark font-medium hover:text-primary transition-colors">About</a>
+                    <a href="diksha.html" class="text-textDark font-medium hover:text-primary transition-colors">Diksha</a>
                     <a href="seva.html" class="text-textDark font-medium hover:text-primary transition-colors">Sevā</a>
-                    <a href="sadhna.html"
-                        class="text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
+                    <a href="sadhna.html" class="text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
                     <a href="scaredGro.html" class="text-textDark font-medium hover:text-primary transition-colors">Geography</a>
                     <a href="vision.html" class="text-textDark font-medium hover:text-primary transition-colors">Vision</a>
+                    <a href="faq.html" class="text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
                 </nav>
 
-                <div class="hidden md:flex">
+                <div class="hidden lg:flex">
                     <a href="contact.html"
-                        class="inline-flex items-center justify-center px-6 py-2.5 rounded-full shadow-sm text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors">
+                        class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors">
                         Connect
                     </a>
                 </div>
+
+                <button id="mobile-menu-button" type="button"
+                    class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-darkBlue hover:text-primary hover:bg-white/70 transition-colors"
+                    aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+
+    <aside id="mobile-menu"
+        class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 lg:hidden"
+        aria-hidden="true">
+        <div class="h-20 px-5 border-b border-gray-100 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-primary font-serif italic text-lg font-bold">
+                <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo" class="h-8 w-8 object-contain">
+                
+            </a>
+            <button id="mobile-menu-close" type="button" class="inline-flex items-center justify-center w-9 h-9 rounded-md text-darkBlue hover:text-primary hover:bg-gray-50" aria-label="Close menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="px-5 py-6 flex flex-col gap-4 text-base">
+            <a href="index.html" class="py-2 border-b border-gray-100 text-textDark font-medium">Home</a>
+            <a href="about.html" class="py-2 border-b border-gray-100 text-textDark font-medium">About</a>
+            <a href="diksha.html" class="py-2 border-b border-gray-100 text-textDark font-medium">Diksha</a>
+            <a href="seva.html" class="py-2 border-b border-gray-100 text-textDark font-medium">Sevā</a>
+            <a href="sadhna.html" class="py-2 border-b border-gray-100 text-textDark font-medium">Sādhana</a>
+            <a href="scaredGro.html" class="py-2 border-b border-gray-100 text-textDark font-medium">Geography</a>
+            <a href="vision.html" class="py-2 border-b border-gray-100 text-textDark font-medium">Vision</a>
+            <a href="faq.html" class="py-2 border-b border-gray-100 text-textDark font-medium">FAQ</a>
+            <a href="contact.html"
+                class="mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors">
+                Connect
+            </a>
+        </nav>
+    </aside>
 
     <main>
         <!-- Hero Section -->
@@ -391,23 +429,20 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-darkBlue pt-20 pb-10 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="border-t border-slate-800 pt-8 flex items-center justify-between">
-                <p class="text-slate-600 text-sm">© 2026 Himalayan Siddhashram Guru Parampara.</p>
-                <div class="flex gap-8 text-xs text-slate-600">
-                    <a href="index.html" class="hover:text-slate-400">Home</a>
-                    <a href="about.html" class="hover:text-slate-400">About</a>
-                    <a href="diksha.html" class="hover:text-slate-400">Diksha</a>
-                    <a href="seva.html" class="hover:text-slate-400">Sevā</a>
-                    <a href="sadhna.html" class="hover:text-slate-400">Sādhana</a>
-                    <a href="scaredGro.html" class="hover:text-slate-400">Geography</a>
-                    <a href="vision.html" class="hover:text-slate-400">Vision</a>
-                    <a href="faq.html" class="hover:text-slate-400">FAQ</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-darkBlue pt-16 pb-10 text-white border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm font-medium uppercase tracking-wider">
+            <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+            <a href="sadhna.html" class="text-gray-300 hover:text-white transition-colors">S&#257;dhana</a>
+            <a href="diksha.html" class="text-gray-300 hover:text-white transition-colors">Diksha</a>
+            <a href="seva.html" class="text-gray-300 hover:text-white transition-colors">Seva</a>
+            <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            <a href="legal.html" class="text-gray-300 hover:text-white transition-colors">Legal</a>
+        </nav>
+        <p class="text-sm text-slate-300">Himalayan Siddhashram Guru Parampara</p>
+        <p class="mt-2 text-xs text-slate-400">Dharma. S&#257;dhana. Transmission.</p>
+    </div>
+</footer>
 
     <!-- Header Control -->
     <script>
@@ -426,6 +461,7 @@
             handleScroll();
         });
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
