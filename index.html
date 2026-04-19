@@ -140,7 +140,8 @@
                     </a>
                 </div>
 
-                <div class="hidden lg:flex items-center gap-8 xl:gap-12">
+                <div class="hidden lg:flex flex-col items-end gap-4 py-4">
+                    <!-- Nav Row 1 (Max 10) -->
                     <nav class="flex items-center space-x-6 xl:space-x-8">
                         <a href="index.html" class="text-primary font-medium hover:text-orange-600 transition-colors">Home</a>
                         <a href="about.html" class="text-textDark font-medium hover:text-primary transition-colors">About</a>
@@ -154,10 +155,16 @@
                         <a href="faq.html" class="text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
                     </nav>
 
-                    <a href="contact.html"
-                        class="inline-flex items-center justify-center px-8 py-3 border border-transparent rounded-full shadow-md text-sm font-semibold text-white bg-primary hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-orange-500/20">
-                        Connect
-                    </a>
+                    <!-- Nav Row 2 (Remaining + Connect) -->
+                    <div class="flex items-center gap-8">
+                        <nav class="hidden lg:flex items-center space-x-6">
+                            <!-- Placeholder for more links as the site grows -->
+                        </nav>
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center px-8 py-2.5 border border-transparent rounded-full shadow-md text-sm font-semibold text-white bg-primary hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-orange-500/20">
+                            Connect
+                        </a>
+                    </div>
                 </div>
 
                 <button id="mobile-menu-button" type="button"
@@ -177,10 +184,10 @@
     </div>
 
     <aside id="mobile-menu"
-        class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 lg:hidden"
+        class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 lg:hidden flex flex-col"
         aria-hidden="true">
-        <div class="h-20 px-5 border-b border-gray-100 flex items-center justify-between">
-            <span class="text-darkBlue font-serif font-bold text-xl uppercase tracking-wider">Menu</span>
+        <div class="h-20 flex-shrink-0 flex items-center justify-between px-6 border-b border-gray-100">
+            <span class="text-xl font-serif italic font-bold text-primary tracking-tight">MENU</span>
             <button id="mobile-menu-close" type="button"
                 class="inline-flex items-center justify-center w-10 h-10 rounded-md text-darkBlue hover:text-primary hover:bg-gray-50"
                 aria-label="Close menu">
@@ -189,7 +196,7 @@
                 </svg>
             </button>
         </div>
-        <nav class="px-5 py-6 flex flex-col gap-1 text-base overflow-y-auto max-h-[calc(100vh-5rem)]">
+        <nav class="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-base">
             <a href="index.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Home</a>
             <a href="about.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">About</a>
             <a href="about-gurusadhna.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">About Guru Sisya</a>
