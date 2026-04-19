@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vidya — Kramik Diksha | Himalayan Siddhashram Guru Parampara</title>
+    <meta name="description"
+        content="Śrī Vidyā Krāmik Dīkṣā within the Himalayan Siddhashram Guru Parampara. A progressive initiation path covering Mahā Gaṇapati, Guru Pādukā, Bālā Tripurasundarī, and higher stages.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F07D3E',
+                        darkBlue: '#0B1B36',
+                        lightBeige: '#FDFCF8',
+                        textDark: '#1A202C',
+                        textMuted: '#64748B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --primary-orange: #F07D3E;
+            --dark-blue: #0B1B36;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #fff5f0 0%, #ffffff 50%, #fdfcf8 100%);
+        }
+
+        .pill-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1.5rem;
+            background-color: white;
+            border: 1px solid rgba(240, 125, 62, 0.1);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary-orange);
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .krama-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .krama-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-[#FAFAFA] font-sans text-textDark selection:bg-primary/20 selection:text-primary">
+
+    <!-- Desktop Header -->
+    <header id="main-header"
+        class="fixed top-0 left-0 right-0 z-40 transition-all duration-500 border-b border-transparent bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-28 lg:h-32">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-4 group">
+                        <img src="images/logo1.png" alt="HSGP Logo" class="h-14 w-14 object-contain transition-transform group-hover:rotate-12" />
+                        <div class="flex flex-col">
+                            <span class="text-xl lg:text-2xl font-serif font-bold text-darkBlue leading-none tracking-tight">HIMALAYAN SIDDHASHRAM</span>
+                            <span class="text-[10px] lg:text-[11px] font-bold text-primary tracking-[0.3em] uppercase mt-1">Guru Parampara</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex flex-col items-end gap-4 py-4">
+                    <nav class="flex items-center space-x-6 xl:space-x-8">
+                        <a href="index.html" class="text-textDark font-medium hover:text-primary transition-colors">Home</a>
+                        <a href="about.html" class="text-textDark font-medium hover:text-primary transition-colors">About</a>
+                        <a href="about-gurusadhna.html" class="text-textDark font-medium hover:text-primary transition-colors whitespace-nowrap">About Guru Sisya</a>
+                        <a href="lingage.html" class="text-textDark font-medium hover:text-primary transition-colors">Lineage</a>
+                        <a href="diksha.html" class="text-textDark font-medium hover:text-primary transition-colors">Diksha</a>
+                        <a href="seva.html" class="text-textDark font-medium hover:text-primary transition-colors">Sevā</a>
+                        <a href="sadhna.html" class="text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
+                        <a href="scaredGro.html" class="text-textDark font-medium hover:text-primary transition-colors">Geography</a>
+                        <a href="vision.html" class="text-textDark font-medium hover:text-primary transition-colors">Vision</a>
+                        <a href="faq.html" class="text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
+                    </nav>
+
+                    <div class="flex items-center gap-8">
+                        <nav class="hidden lg:flex items-center space-x-6">
+                            <a href="preparatory.html" class="text-textDark font-medium hover:text-primary transition-colors">Stage 0</a>
+                            <a href="srividya.html" class="text-primary font-medium hover:text-orange-600 transition-colors">Sri Vidya</a>
+                        </nav>
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center px-8 py-2.5 border border-transparent rounded-full shadow-md text-sm font-semibold text-white bg-primary hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-orange-500/20">
+                            Connect
+                        </a>
+                    </div>
+                </div>
+
+                <button id="mobile-menu-button" type="button"
+                    class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-darkBlue hover:text-primary hover:bg-white/70 transition-colors"
+                    aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden text-textDark font-medium hover:text-primary transition-colors"></div>
+
+    <!-- Mobile Menu Aside -->
+    <aside id="mobile-menu"
+        class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 lg:hidden flex flex-col"
+        aria-hidden="true">
+        <div class="h-20 flex-shrink-0 flex items-center justify-between px-6 border-b border-gray-100">
+            <span class="text-xl font-serif italic font-bold text-primary tracking-tight">MENU</span>
+            <button id="mobile-menu-close" type="button"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-md text-darkBlue hover:text-primary hover:bg-gray-50"
+                aria-label="Close menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-base">
+            <a href="index.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">About</a>
+            <a href="about-gurusadhna.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">About Guru Sisya</a>
+            <a href="lingage.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Lineage</a>
+            <a href="diksha.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Diksha</a>
+            <a href="seva.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Sevā</a>
+            <a href="sadhna.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
+            <a href="preparatory.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Stage 0</a>
+            <a href="srividya.html" class="py-3 border-b border-gray-50 text-primary font-medium hover:text-primary transition-colors">Sri Vidya</a>
+            <a href="scaredGro.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Geography</a>
+            <a href="vision.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Vision</a>
+            <a href="faq.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
+            <a href="contact.html" class="mt-6 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">Connect</a>
+        </nav>
+    </aside>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-lightBeige pt-48 pb-24 overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+                <div class="pill-tag">The Sacred Path</div>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-darkBlue mb-8 leading-tight">
+                    ŚRĪ VIDYĀ — <br /><span class="italic text-primary">KRĀMIK DĪKṢĀ</span>
+                </h1>
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto font-medium tracking-widest uppercase mb-12">
+                    Progressive Initiation Within the Siddhashram Parampara
+                </p>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium mb-10">
+                    Śrī Vidyā is among the most refined and structured streams of Śakti Sādhana within Sanātana Dharma. It is not approached through intellectual study or ritual curiosity. It unfolds through <span class="text-primary italic">Krama</span> — sacred progression — under direct Guru guidance.
+                </p>
+                <div class="inline-block p-8 bg-white rounded-3xl border border-orange-50 italic text-gray-500 font-medium max-w-3xl">
+                    "Within the Himalayan Siddhashram Guru Parampara, Śrī Vidyā is transmitted step by step. Each initiation prepares the aspirant for deeper refinement. Advancement depends upon steadiness, containment, and Guru-āgya."
+                </div>
+            </div>
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-orange-50 rounded-full blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-slate-100 rounded-full blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2"></div>
+        </section>
+
+        <!-- Krama Stages -->
+        <section class="section-padding bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2">
+                    
+                    <!-- Mahā Gaṇapati -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">01</div>
+                        <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Mahā Gaṇapati — Foundation of Stability</h3>
+                        <p class="text-gray-600 leading-relaxed font-medium mb-8">
+                            Before entering the inner circuits of Śrī Vidyā, the aspirant is anchored through Mahā Gaṇapati Sādhana.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-gray-500 font-bold uppercase tracking-wider">
+                                <span class="text-primary">•</span> Removal of inner and outer obstacles
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-500 font-bold uppercase tracking-wider">
+                                <span class="text-primary">•</span> Mental steadiness
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-500 font-bold uppercase tracking-wider">
+                                <span class="text-primary">•</span> Ritual discipline
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-500 font-bold uppercase tracking-wider">
+                                <span class="text-primary">•</span> Energetic grounding
+                            </li>
+                        </ul>
+                        <p class="mt-8 text-sm text-primary italic font-bold">Mahā Gaṇapati stabilises the field so that Śakti transmission can be safely received.</p>
+                    </div>
+
+                    <!-- Guru Pādukā Dīkṣā -->
+                    <div class="krama-card p-10 bg-darkBlue text-white rounded-[40px] border border-white/5 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-white/5 group-hover:text-primary/10 transition-colors">02</div>
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-6">Guru Pādukā Dīkṣā — Anchoring in the Lineage</h3>
+                        <p class="text-slate-300 leading-relaxed font-medium mb-8">
+                            The Guru Pādukā mantra establishes direct connection to the Guru-Mandal. The Pādukā represents the living continuity of the lineage. Through this initiation, the disciple becomes aligned with the subtle current of Siddhashram and the Parampara masters.
+                        </p>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10 italic text-slate-400 text-sm">
+                            "This stage deepens surrender, reverence, and receptivity. Without anchoring in Guru Tattva, Śrī Vidyā remains incomplete."
+                        </div>
+                    </div>
+
+                    <!-- Bālā Tripurasundarī -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group">
+                         <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">03</div>
+                        <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Bālā Tripurasundarī — The Gateway</h3>
+                        <p class="text-gray-600 leading-relaxed font-medium mb-6">
+                            Bālā Tripurasundarī is the doorway into Śrī Vidyā. She refines the inner instrument and softens egoic rigidity. Her Sādhana cultivates purity, subtle awareness, and disciplined mantra repetition.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed font-medium italic mb-4">
+                            Bālā prepares the aspirant for higher Śakti currents by stabilising innocence and clarity within the mind. She is the beginning of inner refinement.
+                        </p>
+                    </div>
+
+                    <!-- Mantriṇī (Śyāmalā) -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">04</div>
+                        <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Mantriṇī (Śyāmalā) — Vak and Inner Governance</h3>
+                        <p class="text-gray-600 leading-relaxed font-medium mb-6">
+                            Mantriṇī Sādhana strengthens:
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                             <div class="p-3 bg-white rounded-xl border border-gray-50 text-[10px] uppercase font-bold text-darkBlue">Speech discipline</div>
+                             <div class="p-3 bg-white rounded-xl border border-gray-50 text-[10px] uppercase font-bold text-darkBlue">Intellectual clarity</div>
+                             <div class="p-3 bg-white rounded-xl border border-gray-50 text-[10px] uppercase font-bold text-darkBlue">Subtle discrimination</div>
+                             <div class="p-3 bg-white rounded-xl border border-gray-50 text-[10px] uppercase font-bold text-darkBlue">Inner governance</div>
+                        </div>
+                        <p class="text-sm text-gray-500 font-medium leading-relaxed italic border-l-2 border-primary pl-6">
+                            This stage refines the aspirant’s relationship with language and thought. Vak-śakti becomes aligned with awareness. The practitioner learns that mantra is not sound alone — it is directed consciousness.
+                        </p>
+                    </div>
+
+                    <!-- Vārāhī -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group">
+                         <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">05</div>
+                        <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Vārāhī — Containment and Protection</h3>
+                        <p class="text-gray-600 leading-relaxed font-medium mb-6">
+                            Vārāhī embodies executive Śakti. Her Sādhana introduces strength, protection, and containment. She stabilises kriyā-śakti and strengthens the aspirant’s capacity to hold intensified transmission without imbalance.
+                        </p>
+                        <p class="text-primary font-bold text-xs tracking-widest uppercase">Vārāhī ensures that discipline remains firm as depth increases.</p>
+                    </div>
+
+                    <!-- Nityā Devīs -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">06</div>
+                        <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Nityā Devīs — Alignment With Subtle Cycles</h3>
+                        <p class="text-gray-600 leading-relaxed font-medium mb-6">
+                            The Nityā Devīs represent subtle dimensions of time and consciousness within Śrī Vidyā. Their practice refines rhythm, awareness of subtle cycles, and deeper integration of Śakti into daily life.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed font-medium italic">
+                            Engagement with the Nityā Devīs requires mental steadiness and disciplined repetition. This stage further purifies perception and sensitivity.
+                        </p>
+                    </div>
+
+                    <!-- Nava-Āvaraṇa Pūjan -->
+                    <div class="lg:col-span-2 krama-card p-10 bg-white rounded-[44px] shadow-sm border border-orange-100 relative overflow-hidden group">
+                         <div class="absolute top-0 right-0 p-12 text-7xl font-serif font-bold text-slate-50 group-hover:text-primary/5 transition-colors">07</div>
+                         <div class="max-w-4xl relative z-10">
+                            <h3 class="text-3xl font-serif font-bold text-darkBlue mb-8">Nava-Āvaraṇa Pūjan — Śrīcakra Upāsanā</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed font-medium mb-8">
+                                Nava-Āvaraṇa Pūjan is the structured worship of the nine enclosures of the Śrīcakra. This is central to Śrī Vidyā Sādhana.
+                            </p>
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+                                <div class="p-5 bg-slate-50 rounded-2xl text-center">
+                                    <span class="block text-xs font-bold text-primary uppercase tracking-widest mb-2">01</span>
+                                    <span class="text-sm font-bold text-darkBlue">Āvaraṇa krama</span>
+                                </div>
+                                <div class="p-5 bg-slate-50 rounded-2xl text-center">
+                                    <span class="block text-xs font-bold text-primary uppercase tracking-widest mb-2">02</span>
+                                    <span class="text-sm font-bold text-darkBlue">Devatā alignment</span>
+                                </div>
+                                <div class="p-5 bg-slate-50 rounded-2xl text-center">
+                                    <span class="block text-xs font-bold text-primary uppercase tracking-widest mb-2">03</span>
+                                    <span class="text-sm font-bold text-darkBlue">Mantra sequencing</span>
+                                </div>
+                                <div class="p-5 bg-slate-50 rounded-2xl text-center">
+                                    <span class="block text-xs font-bold text-primary uppercase tracking-widest mb-2">04</span>
+                                    <span class="text-sm font-bold text-darkBlue">Yantra integration</span>
+                                </div>
+                                <div class="p-5 bg-slate-50 rounded-2xl text-center">
+                                    <span class="block text-xs font-bold text-primary uppercase tracking-widest mb-2">05</span>
+                                    <span class="text-sm font-bold text-darkBlue">Internal visualisation</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed font-medium italic border-l-4 border-primary pl-8 py-2">
+                                "Śrīcakra is not symbolic ornamentation. It is inner cosmology enacted through disciplined ritual. Only qualified aspirants enter this stage."
+                            </p>
+                         </div>
+                    </div>
+
+                    <!-- Pātra Sādhanam -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group">
+                         <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">08</div>
+                         <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Pātra Sādhanam — Becoming the Vessel</h3>
+                         <p class="text-gray-600 leading-relaxed font-medium mb-8">
+                            As Sādhana deepens, refinement of the practitioner becomes central. Pātra Sādhanam prepares the aspirant to become a suitable vessel for intensified Śakti transmission.
+                         </p>
+                         <div class="space-y-4">
+                             <div class="flex items-center gap-4">
+                                 <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                                 <span class="text-sm font-bold text-darkBlue uppercase tracking-tighter">Emotional stability</span>
+                             </div>
+                             <div class="flex items-center gap-4">
+                                 <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                                 <span class="text-sm font-bold text-darkBlue uppercase tracking-tighter">Psychological containment</span>
+                             </div>
+                             <div class="flex items-center gap-4">
+                                 <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                                 <span class="text-sm font-bold text-darkBlue uppercase tracking-tighter">Lifestyle discipline</span>
+                             </div>
+                             <div class="flex items-center gap-4">
+                                 <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                                 <span class="text-sm font-bold text-darkBlue uppercase tracking-tighter">Ethical alignment</span>
+                             </div>
+                         </div>
+                         <p class="mt-8 text-primary font-bold italic">The vessel must be strong before higher currents flow through it.</p>
+                    </div>
+
+                    <!-- Lalitā Sahasranāma -->
+                    <div class="krama-card p-10 bg-slate-50 rounded-[40px] border border-gray-100 relative overflow-hidden group flex flex-col justify-between">
+                        <div>
+                            <div class="absolute top-0 right-0 p-8 text-5xl font-serif font-bold text-slate-100 group-hover:text-primary/5 transition-colors">09</div>
+                            <h3 class="text-2xl font-serif font-bold text-darkBlue mb-6">Lalitā Sahasranāma — Integration Through Contemplation</h3>
+                            <p class="text-gray-600 leading-relaxed font-medium mb-8">
+                                Lalitā Sahasranāma is not mere recitation. It is contemplative integration of the thousand names as stages of consciousness refinement. Through systematic chanting and reflection, the aspirant internalises the attributes of Lalitā Tripurasundarī as living awareness.
+                            </p>
+                        </div>
+                        <p class="text-primary font-bold tracking-widest uppercase text-xs">Devotion and discipline merge at this stage.</p>
+                    </div>
+
+                    <!-- Bhairava Sādhana -->
+                    <div class="lg:col-span-2 krama-card p-10 bg-darkBlue text-white rounded-[44px] border border-white/5 relative overflow-hidden group">
+                         <div class="absolute top-0 right-0 p-12 text-7xl font-serif font-bold text-white/5 group-hover:text-primary/10 transition-colors">10</div>
+                         <div class="max-w-4xl relative z-10">
+                            <h3 class="text-3xl font-serif font-bold text-primary mb-8">Bhairava Sādhana Within Śrī Vidyā</h3>
+                            <p class="text-lg text-slate-300 leading-relaxed font-medium mb-8">
+                                Within certain phases, Bhairava Sādhana may be introduced to strengthen alertness, fearlessness, and inner clarity. Bhairava stabilises the practitioner during deeper Śakti processes. His presence reinforces courage and containment.
+                            </p>
+                            <div class="p-6 border-l-2 border-primary bg-white/5 rounded-r-2xl italic text-slate-400">
+                                This stage is conferred selectively, based on readiness and necessity within the krama.
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nature of Progression -->
+        <section class="section-padding bg-lightBeige relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+                <h2 class="text-4xl font-serif font-bold text-darkBlue mb-12 italic">The Nature of Progression</h2>
+                <p class="text-xl text-gray-600 font-medium mb-16 leading-relaxed">
+                    Śrī Vidyā Krāmik Dīkṣā does not follow a fixed timeline. Advancement depends upon the stability of the aspirant, observed personally by the Guru.
+                </p>
+                
+                <div class="grid md:grid-cols-5 gap-4 mb-20 text-center">
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-orange-50/50">
+                        <span class="block text-primary text-xl mb-4 font-bold">○</span>
+                        <span class="text-[10px] font-bold text-darkBlue uppercase tracking-widest">Consistent Practice</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-orange-50/50">
+                        <span class="block text-primary text-xl mb-4 font-bold">○</span>
+                        <span class="text-[10px] font-bold text-darkBlue uppercase tracking-widest">Guru-āgya</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-orange-50/50">
+                        <span class="block text-primary text-xl mb-4 font-bold">○</span>
+                        <span class="text-[10px] font-bold text-darkBlue uppercase tracking-widest">Emotional Steadiness</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-orange-50/50">
+                        <span class="block text-primary text-xl mb-4 font-bold">○</span>
+                        <span class="text-[10px] font-bold text-darkBlue uppercase tracking-widest">Ethical Conduct</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-orange-50/50">
+                        <span class="block text-primary text-xl mb-4 font-bold">○</span>
+                        <span class="text-[10px] font-bold text-darkBlue uppercase tracking-widest">Absence of Haste</span>
+                    </div>
+                </div>
+
+                <div class="bg-darkBlue text-white p-12 rounded-[44px] shadow-xl relative overflow-hidden">
+                     <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl opacity-10"></div>
+                     <h4 class="text-3xl font-serif font-bold text-primary mb-8 relative z-10 italic">"Experience does not determine progression. Stability does."</h4>
+                     <p class="text-slate-400 font-medium tracking-widest uppercase text-xs mb-10 relative z-10">Confidentiality and Maryādā</p>
+                     <p class="text-slate-300 max-w-2xl mx-auto leading-relaxed text-sm mb-12 relative z-10">
+                        Certain mantras, ritual procedures, and internal structures remain confidential within the Parampara. Sacred knowledge is preserved through maryādā. Śrī Vidyā demands humility, discipline, and silence.
+                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Aim -->
+        <section class="section-padding bg-white text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl font-serif font-bold text-darkBlue mb-12">The Aim of Śrī Vidyā</h2>
+                <p class="text-2xl text-gray-400 font-serif italic leading-relaxed mb-16">
+                    "The aim is not ritual mastery. It is union with Śakti as the ground of consciousness. Through Krama, the aspirant refines perception, stabilises awareness, and aligns life with Dharma. Śrī Vidyā, when lived sincerely, transforms the practitioner from within."
+                </p>
+                <div class="h-px w-24 bg-primary mx-auto mb-16"></div>
+                <p class="text-primary font-bold text-xs uppercase tracking-[0.6em]">Lineage-Rooted Transmission</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBlue pt-16 pb-10 text-white border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm font-medium uppercase tracking-wider">
+                <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="sadhna.html" class="text-gray-300 hover:text-white transition-colors">Sādhana</a>
+                <a href="diksha.html" class="text-gray-300 hover:text-white transition-colors">Diksha</a>
+                <a href="seva.html" class="text-gray-300 hover:text-white transition-colors">Seva</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                <a href="legal.html" class="text-gray-300 hover:text-white transition-colors">Legal</a>
+            </nav>
+            <p class="text-sm text-slate-300">Himalayan Siddhashram Guru Parampara</p>
+            <p class="mt-2 text-xs text-slate-400">Dharma. Sādhana. Transmission.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.getElementById('main-header');
+            function handleScroll() {
+                if (window.scrollY > 50) {
+                    header.classList.remove('bg-transparent', 'border-transparent');
+                    header.classList.add('bg-white/90', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                } else {
+                    header.classList.add('bg-transparent', 'border-transparent');
+                    header.classList.remove('bg-white/90', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                }
+            }
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
