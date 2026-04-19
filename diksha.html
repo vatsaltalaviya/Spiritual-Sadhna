@@ -162,24 +162,24 @@
     <header id="main-header"
         class="w-full fixed top-0 z-50 transition-all duration-300 border-b bg-transparent border-transparent">
         <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-48">
+            <div class="flex justify-between items-center h-48 transition-all duration-300">
                 <div class="flex-shrink-0 flex items-center text-primary font-serif italic text-2xl font-bold">
                     <a href="index.html" class="flex items-center gap-4" aria-label="Spiritual Sadhna home">
                         <img src="images/logo1-transaparant.png" alt="Spiritual Sadhna Logo"
-                            class="h-40 w-40 object-contain"
+                            class="h-40 w-40 object-contain transition-all duration-300"
                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\' viewBox=\'0 0 24 24\' fill=\'%23F07D3E\'><path d=\'M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z\'/></svg>'">
                         <span class="tracking-tight">HSGP</span>
                     </a>
                 </div>
 
                 <div class="hidden lg:flex flex-col items-end gap-4 py-4">
-                    <!-- Nav Row 1 (Max 10) -->
-                    <nav class="flex items-center space-x-6 xl:space-x-8">
+                    <!-- Nav Row 1 -->
+                    <nav class="flex items-center space-x-6 xl:space-x-8 text-sm">
                         <a href="index.html" class="text-textDark font-medium hover:text-primary transition-colors">Home</a>
                         <a href="about.html" class="text-textDark font-medium hover:text-primary transition-colors">About</a>
                         <a href="about-gurusadhna.html" class="text-textDark font-medium hover:text-primary transition-colors whitespace-nowrap">About Guru Sisya</a>
                         <a href="lingage.html" class="text-textDark font-medium hover:text-primary transition-colors">Lineage</a>
-                        <a href="diksha.html" class="text-primary font-medium hover:text-orange-600 transition-colors">Diksha</a>
+                        <a href="diksha.html" class="text-primary font-bold hover:text-primary transition-colors">Diksha</a>
                         <a href="seva.html" class="text-textDark font-medium hover:text-primary transition-colors">Sevā</a>
                         <a href="sadhna.html" class="text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
                         <a href="scaredGro.html" class="text-textDark font-medium hover:text-primary transition-colors">Geography</a>
@@ -187,55 +187,51 @@
                         <a href="faq.html" class="text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
                     </nav>
 
-                    <!-- Nav Row 2 (Remaining + Connect) -->
+                    <!-- Nav Row 2 -->
                     <div class="flex items-center gap-8">
-                        <nav class="hidden lg:flex items-center space-x-6">
-                            <a href="preparatory.html" class="text-textDark font-medium hover:text-primary transition-colors">Stage 0</a>
-                            <a href="srividya.html" class="text-textDark font-medium hover:text-primary transition-colors hover:text-primary transition-colors">Sri Vidya</a>
-                            <a href="mahavidya.html" class="text-textDark font-medium hover:text-primary transition-colors hover:text-primary transition-colors">Mahavidya</a>
+                        <nav class="hidden lg:flex items-center space-x-6 text-xs uppercase tracking-widest font-bold">
+                            <a href="preparatory.html" class="text-textDark hover:text-primary transition-colors">Stage 0</a>
+                            <a href="diksha-process.html" class="text-textDark hover:text-primary transition-colors whitespace-nowrap">Diksha Process</a>
+                            <a href="srividya.html" class="text-textDark hover:text-primary transition-colors whitespace-nowrap">Sri Vidya</a>
+                            <a href="mahavidya.html" class="text-textDark hover:text-primary transition-colors whitespace-nowrap">Mahavidya</a>
                         </nav>
                         <a href="contact.html"
-                            class="inline-flex items-center justify-center px-8 py-2.5 border border-transparent rounded-full shadow-md text-sm font-semibold text-white bg-primary hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-orange-500/20">
+                            class="inline-flex items-center justify-center px-8 py-2.5 border border-transparent rounded-full shadow-md text-xs font-bold text-white bg-primary hover:bg-orange-600 transition-all hover:scale-105 active:scale-95 shadow-orange-500/20 uppercase tracking-widest">
                             Connect
                         </a>
                     </div>
                 </div>
 
                 <button id="mobile-menu-button" type="button"
-                    class="lg:hidden items-center justify-center w-10 h-10 rounded-lg text-darkBlue hover:text-primary hover:bg-white/70 transition-colors"
-                    aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                    class="lg:hidden items-center justify-center w-10 h-10 rounded-lg text-darkBlue hover:text-primary transition-colors"
+                    aria-label="Open menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
         </div>
     </header>
 
-    <div id="mobile-menu-overlay"
-        class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden">
-    </div>
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
 
     <aside id="mobile-menu"
-        class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 lg:hidden flex flex-col"
-        aria-hidden="true">
+        class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-2xl translate-x-full transition-transform duration-300 lg:hidden flex flex-col">
         <div class="h-20 flex-shrink-0 flex items-center justify-between px-6 border-b border-gray-100">
-            <span class="text-xl font-serif italic font-bold text-primary tracking-tight">MENU</span>
-            <button id="mobile-menu-close" type="button"
-                class="inline-flex items-center justify-center w-10 h-10 rounded-md text-darkBlue hover:text-primary hover:bg-gray-50"
-                aria-label="Close menu">
+            <span class="text-xl font-serif italic font-bold text-primary">MENU</span>
+            <button id="mobile-menu-close" type="button" class="w-10 h-10 text-darkBlue hover:text-primary transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
-        <nav class="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-base">
+        <nav class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-1">
             <a href="index.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Home</a>
             <a href="about.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">About</a>
             <a href="about-gurusadhna.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">About Guru Sisya</a>
             <a href="lingage.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Lineage</a>
-            <a href="diksha.html" class="py-3 border-b border-gray-50 text-primary font-medium">Diksha</a>
+            <a href="diksha.html" class="py-3 border-b border-gray-50 text-primary font-bold">Diksha</a>
+            <a href="diksha-process.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Diksha Process</a>
             <a href="preparatory.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Stage 0</a>
             <a href="srividya.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Sri Vidya</a>
             <a href="mahavidya.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Mahavidya</a>
@@ -243,11 +239,8 @@
             <a href="sadhna.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Sādhana</a>
             <a href="scaredGro.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Geography</a>
             <a href="vision.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">Vision</a>
-            <a href="faq.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
-            <a href="contact.html"
-                class="mt-6 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium text-white bg-primary hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
-                Connect
-            </a>
+            <a href="faq.html" class="py-3 text-textDark font-medium hover:text-primary transition-colors">FAQ</a>
+            <a href="contact.html" class="mt-8 px-6 py-4 bg-primary text-white font-bold rounded-full text-center hover:bg-orange-600 transition-colors uppercase tracking-widest text-xs">Connect</a>
         </nav>
     </aside>
 
@@ -390,96 +383,44 @@
                 <div class="mt-16 text-center max-w-3xl mx-auto">
                     <h4 class="text-2xl font-serif font-bold text-darkBlue mb-4">The Spirit of Progression</h4>
                     <p class="text-gray-600 font-medium leading-relaxed">
-                        Sādhana is not accumulation of initiations. It is refinement of consciousness. The disciple who advances steadily becomes inwardly quiet, develops clarity, reduces reactivity, and deepens devotion.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Diksha Process: Online & In-Person -->
+                        Sādhana is not accumulation of initiations. It is refinement of consciousness. The disciple who advances steadily becomes inwardly quiet, develops clarity, reduces reactivity, and deepens de        <!-- Diksha Process Overview (Redirect to dedicated page) -->
         <section class="section-padding bg-white relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <div class="pill-tag">The Process</div>
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-darkBlue mb-6">DIKSHA PROCESS</h2>
-                    <p class="text-lg text-gray-600 font-medium max-w-3xl mx-auto">
-                        Whether online or in person, the integrity of initiation remains rooted in lineage, discipline, and preparedness.
-                    </p>
-                </div>
-
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <!-- Online Diksha -->
-                    <div class="p-10 rounded-3xl border border-gray-100 bg-slate-50 transition-all hover:bg-white hover:shadow-xl">
-                        <div class="flex items-center gap-4 mb-8">
-                            <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-primary text-2xl">💻</div>
-                            <h3 class="text-3xl font-serif font-bold text-darkBlue">Online Diksha</h3>
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="pill-tag text-primary">The Path</div>
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold text-darkBlue mb-8 leading-tight">THE DIKSHA <br /><span class="italic text-primary">PROCESS</span></h2>
+                        <p class="text-lg text-gray-600 font-medium leading-relaxed mb-8">
+                            In the Himalayan Siddhashram Guru Parampara, Diksha is a sacred activation of the lineage current. Whether conducted online or in person, it requires structured preparation and demonstrated readiness.
+                        </p>
+                        <div class="space-y-4 mb-10 text-gray-700 font-medium">
+                            <p class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Common Foundation for all Aspirants</p>
+                            <p class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Online & In-Person Transmission Protocols</p>
+                            <p class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Responsibilities & Conduct after Initiation</p>
                         </div>
-                        <ul class="space-y-6 text-gray-700 font-medium">
-                            <li class="pl-4 border-l-2 border-primary/30">
-                                <strong class="text-darkBlue block">Pre-Diksha Preparation</strong> Specific fasting, lifestyle instructions, and space preparation.
-                            </li>
-                            <li class="pl-4 border-l-2 border-primary/30">
-                                <strong class="text-darkBlue block">Scheduled Session</strong> Conducted via secure platform with formal initiation moment.
-                            </li>
-                            <li class="pl-4 border-l-2 border-primary/30">
-                                <strong class="text-darkBlue block">Post-Diksha Protocol</strong> Written instructions and daily practice guidelines provided.
-                            </li>
-                        </ul>
-                        <p class="mt-8 text-sm text-gray-500 italic">"Online Diksha demands the same seriousness as physical presence."</p>
+                        <a href="diksha-process.html" class="inline-flex items-center justify-center px-10 py-4 bg-darkBlue text-white font-bold rounded-full hover:bg-slate-800 transition-all hover:scale-105 shadow-xl shadow-slate-200 uppercase tracking-widest text-[10px]">
+                            Understand the Process →
+                        </a>
                     </div>
-
-                    <!-- Post-Diksha -->
-                    <div class="p-10 rounded-3xl border border-gray-100 bg-slate-50 transition-all hover:bg-white hover:shadow-xl">
-                         <div class="flex items-center gap-4 mb-8">
-                            <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-primary text-2xl">⚡</div>
-                            <h3 class="text-3xl font-serif font-bold text-darkBlue">After Diksha</h3>
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-slate-50 rounded-[60px] relative overflow-hidden group">
+                           <div class="absolute inset-0 bg-gradient-to-br from-orange-50 to-blue-50 opacity-40"></div>
+                           <div class="absolute inset-0 flex items-center justify-center p-12">
+                                <div class="text-center space-y-6">
+                                    <div class="w-24 h-24 rounded-3xl bg-white shadow-xl flex items-center justify-center mx-auto transition-transform group-hover:rotate-12">
+                                        <span class="text-4xl">☸</span>
+                                    </div>
+                                    <h3 class="text-2xl font-serif font-bold text-darkBlue">Sacred Transmission</h3>
+                                    <p class="text-sm text-gray-500 leading-relaxed">Lineage. Discipline. Continuity.</p>
+                                </div>
+                           </div>
                         </div>
-                        <p class="text-sm text-gray-500 mb-6 font-medium">Diksha marks responsibility. After initiation, the disciple must:</p>
-                        <ul class="space-y-4 text-gray-700 font-medium text-sm">
-                            <li class="flex items-start gap-2">
-                                <span class="text-primary mt-1">●</span>
-                                <span>Maintain uninterrupted daily Sādhana</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-primary mt-1">●</span>
-                                <span>Observe strict confidentiality</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-primary mt-1">●</span>
-                                <span>Report difficulties honestly</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-primary mt-1">●</span>
-                                <span>Avoid modification of instructions</span>
-                            </li>
-                        </ul>
-                        <p class="mt-8 text-darkBlue font-serif italic text-sm">"Transmission strengthens through practice."</p>
+                        <!-- Decorative element -->
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
                     </div>
                 </div>
-
-                <div class="mt-20 bg-darkBlue rounded-3xl p-12 text-center text-white">
-                    <h4 class="text-3xl font-serif font-bold mb-6">Important Principles</h4>
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div>
-                            <p class="text-primary font-bold text-4xl mb-2">01</p>
-                            <p class="text-sm font-medium uppercase tracking-widest text-slate-300">Activation</p>
-                            <p class="text-xs text-slate-400 mt-2">Diksha is not a ceremony; it is activation.</p>
-                        </div>
-                        <div>
-                            <p class="text-primary font-bold text-4xl mb-2">02</p>
-                            <p class="text-sm font-medium uppercase tracking-widest text-slate-300">Readiness</p>
-                            <p class="text-xs text-slate-400 mt-2">Readiness determines timing.</p>
-                        </div>
-                        <div>
-                            <p class="text-primary font-bold text-4xl mb-2">03</p>
-                            <p class="text-sm font-medium uppercase tracking-widest text-slate-300">Guru-āgya</p>
-                            <p class="text-xs text-slate-400 mt-2">Guru-āgya governs progression.</p>
-                        </div>
-                        <div>
-                            <p class="text-primary font-bold text-4xl mb-2">04</p>
-                            <p class="text-sm font-medium uppercase tracking-widest text-slate-300">Maryādā</p>
-                            <p class="text-xs text-slate-400 mt-2">Maryādā protects the practice.</p>
-                        </div>
+            </div>
+        </section>                </div>
                     </div>
                 </div>
             </div>
@@ -777,22 +718,6 @@
 </footer>
 
     <!-- Scroll Effect -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const header = document.getElementById('main-header');
-            function handleScroll() {
-                if (window.scrollY > 20) {
-                    header.classList.remove('bg-transparent', 'border-transparent');
-                    header.classList.add('bg-white/80', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
-                } else {
-                    header.classList.add('bg-transparent', 'border-transparent');
-                    header.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
-                }
-            }
-            window.addEventListener('scroll', handleScroll);
-            handleScroll();
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 

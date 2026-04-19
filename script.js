@@ -89,13 +89,31 @@ document.addEventListener('DOMContentLoaded', function () {
     // Header Scroll Effect
     var header = document.getElementById('main-header');
     if (header) {
+        var innerHeader = header.querySelector('.flex.justify-between');
+        var logo = header.querySelector('img');
         var handleScroll = function () {
-            if (window.scrollY > 20) {
+            if (window.scrollY > 50) {
                 header.classList.remove('bg-transparent', 'border-transparent');
-                header.classList.add('bg-white/80', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                header.classList.add('bg-white/90', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                if (innerHeader) {
+                    innerHeader.classList.remove('h-48');
+                    innerHeader.classList.add('h-24');
+                }
+                if (logo) {
+                    logo.classList.remove('h-40', 'w-40');
+                    logo.classList.add('h-16', 'w-16');
+                }
             } else {
                 header.classList.add('bg-transparent', 'border-transparent');
-                header.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                header.classList.remove('bg-white/90', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
+                if (innerHeader) {
+                    innerHeader.classList.add('h-48');
+                    innerHeader.classList.remove('h-24');
+                }
+                if (logo) {
+                    logo.classList.add('h-40', 'w-40');
+                    logo.classList.remove('h-16', 'w-16');
+                }
             }
         };
         window.addEventListener('scroll', handleScroll);
@@ -107,4 +125,43 @@ document.addEventListener('DOMContentLoaded', function () {
             closeMenu();
         }
     });
+
+    // Scroll Reveal Effect
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    if (revealElements.length > 0) {
+        const handleReveal = function() {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 150;
+                if (elementTop < window.innerHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', handleReveal);
+        handleReveal(); // Initial check
+    }
+
+    // FAQ / Accordion Toggle
+    window.toggleFaq = function(element) {
+        const allItems = document.querySelectorAll('.faq-item');
+        allItems.forEach(item => {
+            if (item !== element && item.classList.contains('active')) {
+                item.classList.remove('active');
+            }
+        });
+        element.classList.toggle('active');
+    };
+
+    // Textarea Auto-resize
+    const textareas = document.querySelectorAll('textarea');
+    textareas.forEach(textarea => {
+        textarea.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    });
 });
+
+
+
