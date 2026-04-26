@@ -96,23 +96,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 header.classList.remove('bg-transparent', 'border-transparent');
                 header.classList.add('bg-white/90', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
                 if (innerHeader) {
-                    innerHeader.classList.remove('h-48');
-                    innerHeader.classList.add('h-24');
+                    innerHeader.classList.remove('h-96');
+                    innerHeader.classList.add('h-48');
                 }
                 if (logo) {
-                    logo.classList.remove('h-40', 'w-40');
-                    logo.classList.add('h-16', 'w-16');
+                    logo.classList.remove('h-80', 'w-80');
+                    logo.classList.add('h-32', 'w-32');
                 }
             } else {
                 header.classList.add('bg-transparent', 'border-transparent');
                 header.classList.remove('bg-white/90', 'backdrop-blur-md', 'border-gray-100', 'shadow-sm');
                 if (innerHeader) {
-                    innerHeader.classList.add('h-48');
-                    innerHeader.classList.remove('h-24');
+                    innerHeader.classList.add('h-96');
+                    innerHeader.classList.remove('h-48');
                 }
                 if (logo) {
-                    logo.classList.add('h-40', 'w-40');
-                    logo.classList.remove('h-16', 'w-16');
+                    logo.classList.add('h-80', 'w-80');
+                    logo.classList.remove('h-32', 'w-32');
                 }
             }
         };
