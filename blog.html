@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Reach out to the Himalayan Siddhashram Guru Parampara for guidance on Diksha, Sadhana, and spiritual queries. Start your journey with Guru Brahmanshi today.">
-    <meta name="keywords" content="Contact Spiritual Guru, Sri Vidya guidance, Apply for Diksha, Himalayan Siddhashram contact, Dr Sonal Shrivastava contact, Himalayan spirituality, Siddhashram tradition">
-    <title>Connect with Us | Himalayan Siddhashram Guru Parampara</title>
+        content="Frequently asked questions about Sri Vidya, Diksha, and Himalayan Sadhana. Understanding the Guru-Shishya relationship and starting your spiritual journey.">
+    <meta name="keywords" content="Spiritual FAQ, Diksha Questions, Sri Vidya FAQ, How to find a real Guru, Tantra FAQ India, Sadhana for householders, Himalayan spirituality">
+    <title>Our Blog | Himalayan Siddhashram Guru Parampara</title>
     <link rel="icon" href="images/logo1.png" type="image/png">
 
     <!-- Schema Markup -->
@@ -56,18 +56,13 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#F07D3E', // Orange accent
-                        darkBlue: '#0B1B36', // Sections and footer dark bg
+                        primary: '#F07D3E',
+                        darkBlue: '#0B1B36',
                         lightBeige: '#FDFCF8',
-                        textDark: '#1A202C',
-                        textMuted: '#64748B',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Playfair Display', 'serif'],
-                    },
-                    backgroundImage: {
-                        'hero-gradient': 'linear-gradient(to right, #E2E8F0 0%, #FFFFFF 50%, #FFEDD5 100%)',
                     }
                 }
             }
@@ -76,7 +71,7 @@
 
     <style>
         :root {
-            --primary-orange: #F07D3E;
+            --primary: #F07D3E;
             --dark-blue: #0B1B36;
         }
 
@@ -89,15 +84,8 @@
         h1,
         h2,
         h3,
-        h4,
-        h5,
-        h6 {
+        h4 {
             font-family: 'Playfair Display', serif;
-        }
-
-        .section-padding {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
         }
 
         .pill-tag {
@@ -111,47 +99,37 @@
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: var(--dark-blue);
             margin-bottom: 1.5rem;
         }
 
-        .form-input {
-            width: 100%;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            border: none;
-            border-bottom: 1px solid #e2e8f0;
-            background: transparent;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
-            transition: border-color 0.3s ease;
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
 
-        .form-input:focus {
-            outline: none;
-            border-bottom-color: var(--primary-orange);
+        /* Accordion transition logic handled by JS, but base style here */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
         }
 
-        .form-label {
-            display: block;
-            font-size: 0.65rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #64748b;
-            margin-bottom: 0.5rem;
+        .faq-item.active .faq-content {
+            max-height: 1000px;
+            padding-bottom: 2rem;
         }
 
-        /* Responsive Navbar */
-        .nav-link {
-            transition: color 0.3s ease;
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            color: var(--primary);
         }
 
-        #main-header.scrolled {
-            background-color: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border-bottom-color: #e2e8f0;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        .faq-item {
+            border-bottom: 1px solid rgba(11, 27, 54, 0.08);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
         }
     </style>
 </head>
@@ -238,145 +216,37 @@
             <a href="seva.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors text-lg">Sevā</a>
             <a href="sadhna.html" class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors text-lg">Sādhana</a>
             
-            <a href="faq.html" class="py-3 text-textDark font-medium hover:text-primary transition-colors text-lg">FAQ</a>
+            <a href="faq.html" class="py-3 text-primary font-bold text-lg">FAQ</a>
             <a href="blog.html"
                 class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors text-lg">Blog</a>
             <a href="event.html"
                 class="py-3 border-b border-gray-50 text-textDark font-medium hover:text-primary transition-colors text-lg">Event</a>
-            <a href="contact.html" class="mt-8 px-6 py-4 bg-primary text-white font-bold rounded-full text-center hover:bg-orange-600 transition-colors uppercase tracking-widest text-xs shadow-lg">Connect</a>
+            <a href="contact.html" class="mt-8 px-6 py-4 bg-primary text-white font-bold rounded-full text-center hover:bg-orange-600 transition-colors uppercase tracking-widest text-xs">Connect</a>
         </nav>
     </aside>
 
     <main class="pt-96">
-        <!-- Contact Hero -->
-        <section class="max-w-4xl mx-auto px-4 text-center mb-24">
-            <h1 class="text-6xl font-serif font-bold text-darkBlue mb-6">Contact</h1>
-            <p class="text-2xl text-gray-500 font-serif italic mb-4 max-w-2xl mx-auto">
-                For enquiries related to Sādhana, Diksha, or guidance.
-            </p>
-            <p class="text-[0.65rem] font-bold tracking-[0.3em] uppercase text-textMuted opacity-60">
-                PLEASE COMMUNICATE WITH CLARITY AND RESPECT.
-            </p>
-        </section>
+        <section class="relative bg-lightBeige pt-48 pb-48 overflow-hidden flex flex-col items-center justify-center text-center min-h-[60vh]">
+            <img src="images/icons/mandala1.png" alt="Sacred Mandala Artwork"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] opacity-5 pointer-events-none" />
 
-        <!-- Communication Info -->
-        <section class="max-w-4xl mx-auto px-4 text-center mb-20 space-y-12">
-            <div>
-                <a href="mailto:drsonalendo@gmail.com"
-                    class="text-3xl md:text-4xl font-serif font-bold text-primary hover:text-orange-600 transition-colors">
-                    drsonalendo@gmail.com
-                </a>
-                <p class="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-textMuted mt-4 opacity-50">
-                    ELECTRONIC CORRESPONDENCE
-                </p>
-            </div>
-
-            <div>
-                <p class="text-3xl md:text-4xl font-serif font-bold text-primary">
-                    +91 9993177219
-                </p>
-                <div class="inline-block px-4 py-2 mt-4 bg-gray-50 rounded-lg text-[0.65rem] font-medium text-textMuted">
-                    Message only. Calling is not permitted. Please send one message only.
-                </div>
-            </div>
-        </section>
-
-        <!-- Enquiry Form -->
-        <section class="max-w-3xl mx-auto px-4 mb-32">
-            <form action="#" method="POST" class="space-y-12">
-                <div class="space-y-2">
-                    <label class="form-label">FULL NAME</label>
-                    <input type="text" name="name" placeholder="Identity of the seeker" class="form-input" required>
-                </div>
-
-                <div class="space-y-2">
-                    <label class="form-label">EMAIL ADDRESS</label>
-                    <input type="email" name="email" placeholder="For return correspondence" class="form-input" required>
-                </div>
-
-                <div class="space-y-2">
-                    <label class="form-label">YOUR ENQUIRY</label>
-                    <textarea name="message" placeholder="State your intent with clarity..." rows="1"
-                        class="form-input resize-none overflow-hidden"></textarea>
-                </div>
-
-                <div class="flex justify-center pt-8">
-                    <button type="submit"
-                        class="px-12 py-4 bg-[#8B5A2B] hover:bg-darkBlue text-white font-bold tracking-widest text-[0.75rem] uppercase transition-all duration-300">
-                        SUBMIT ENQUIRY
-                    </button>
-                </div>
-            </form>
-        </section>
-
-        <!-- Guidelines Section -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
-            <div class="lg:flex lg:gap-20">
-                <div class="lg:w-1/2 mb-16 lg:mb-0">
-                    <h2 class="text-3xl font-serif font-bold text-darkBlue mb-12">Guidelines for Communication</h2>
-                    <div class="space-y-8">
-                        <div class="flex gap-6 items-start">
-                            <span class="text-[0.65rem] font-bold text-primary pt-1.5 opacity-60">01</span>
-                            <p class="text-gray-600 font-medium leading-relaxed">
-                                Be clear and concise in your communication, focusing on the essence of your journey.
-                            </p>
-                        </div>
-                        <div class="flex gap-6 items-start">
-                            <span class="text-[0.65rem] font-bold text-primary pt-1.5 opacity-60">02</span>
-                            <p class="text-gray-600 font-medium leading-relaxed">
-                                Avoid repeated messages. Silence is also a form of communication and requires patience.
-                            </p>
-                        </div>
-                        <div class="flex gap-6 items-start">
-                            <span class="text-[0.65rem] font-bold text-primary pt-1.5 opacity-60">03</span>
-                            <p class="text-gray-600 font-medium leading-relaxed">
-                                Maintain respect and maryādā (boundaries) throughout your interaction with the ashram.
-                            </p>
-                        </div>
-                        <div class="flex gap-6 items-start">
-                            <span class="text-[0.65rem] font-bold text-primary pt-1.5 opacity-60">04</span>
-                            <p class="text-gray-600 font-medium leading-relaxed">
-                                Allow ample time for a response. Spiritual guidance cannot be rushed or scheduled.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/2 flex items-center justify-center">
-                    <div class="bg-lightBeige p-12 relative overflow-hidden group w-full max-w-lg">
-                        <!-- Decorative thin lines like technical drawing -->
-                        <div class="absolute top-0 right-0 w-32 h-32 border-r border-t border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="absolute bottom-12 right-12 w-24 h-24 rounded-full border border-primary/10"></div>
-                        
-                        <div class="relative z-10">
-                            <h4 class="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-primary mb-6 opacity-60">DISCRETION</h4>
-                            <p class="text-2xl font-serif italic text-darkBlue leading-relaxed mb-8">
-                                "Responses are provided as per availability and discretion."
-                            </p>
-                            <div class="w-12 h-[1px] bg-primary/30"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Closing Statement Box -->
-        <section class="max-w-5xl mx-auto px-4 mb-32">
-            <div class="bg-gray-50/50 py-20 px-8 text-center border border-gray-100/50">
-                <p class="text-3xl font-serif text-darkBlue leading-relaxed mb-2">
-                    Communication is part of discipline.
-                </p>
-                <p class="text-3xl font-serif text-primary italic font-medium leading-relaxed">
-                    Approach with clarity and respect.
+            <div class="relative z-10 max-w-4xl mx-auto px-4">
+                <div class="pill-tag text-primary border-primary/20 bg-orange-50">Insights & Articles</div>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-darkBlue mb-8 leading-tight">
+                    OUR <span class="italic text-primary">BLOG</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium leading-relaxed italic border-l-4 border-primary/20 pl-8 text-left md:text-center md:border-l-0 md:pl-0">
+                    Coming Soon.
                 </p>
             </div>
         </section>
-    </main>
+</main>
 
     <!-- Footer -->
     <footer class="bg-darkBlue pt-16 pb-10 text-white border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm font-medium uppercase tracking-wider">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav
+                class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm font-medium uppercase tracking-wider">
                 <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
                 <a href="sadhna.html" class="text-gray-300 hover:text-white transition-colors">S&#257;dhana</a>
                 <a href="about-gurusadhna.html" class="text-gray-300 hover:text-white transition-colors">Guru Sisya</a>
@@ -386,11 +256,12 @@
                 <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
                 <a href="legal.html" class="text-gray-300 hover:text-white transition-colors">Disclaimer</a>
             </nav>
-        <p class="text-sm text-slate-300">Himalayan Siddhashram Guru Parampara</p>
-        <p class="mt-2 text-xs text-slate-400">Dharma. S&#257;dhana. Transmission.</p>
-    </div>
-</footer>
+            <p class="text-sm text-slate-300">Himalayan Siddhashram Guru Parampara</p>
+            <p class="mt-2 text-xs text-slate-400">Dharma. S&#257;dhana. Transmission.</p>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 
